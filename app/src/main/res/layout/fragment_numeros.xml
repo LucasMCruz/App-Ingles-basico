@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.NumerosFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/segundo_fundo">
+
+        <Button
+            android:id="@+id/btnUm"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/um"
+            android:elevation="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnTres"
+            app:layout_constraintEnd_toStartOf="@+id/btnDois"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnDois"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/dois"
+            android:elevation="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnUm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnUm"
+            app:layout_constraintTop_toTopOf="@+id/btnUm" />
+
+        <Button
+            android:id="@+id/btnTres"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/tres"
+            android:elevation="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnCinco"
+            app:layout_constraintEnd_toStartOf="@+id/btnQuatro"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnUm" />
+
+        <Button
+            android:id="@+id/btnQuatro"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/quatro"
+            android:elevation="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnTres"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnTres"
+            app:layout_constraintTop_toTopOf="@+id/btnTres" />
+
+        <Button
+            android:id="@+id/btnCinco"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/cinco"
+            android:elevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnSeis"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnTres" />
+
+        <Button
+            android:id="@+id/btnSeis"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/seis"
+            android:elevation="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnCinco"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnCinco"
+            app:layout_constraintTop_toTopOf="@+id/btnCinco" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
